@@ -1,40 +1,41 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "General Sans";
 }
 
-html,body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-.minicircle{
-    transition:cubic-bezier(0.19, 1, 0.22, 1)1s;
+.minicircle {
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
     width: 10px;
     height: 10px;
     z-index: 99999;
     position: absolute;
-    border-radius:50% ;
+    border-radius: 50%;
     background-color: #fff;
 }
 
-.bounding{
+.bounding {
     width: fit-content;
     overflow: hidden;
 }
 
-.bounding .boundingelem{
+.bounding .boundingelem {
     transform: translateY(100%);
 }
 
-#main{
+#main {
     width: 100%;
     background-color: black;
 }
 
-#hero{
+#hero {
     position: relative;
     color: #fff;
     width: 100%;
@@ -42,26 +43,26 @@ html,body{
     background-color: black;
 }
 
-#nav{
+#nav {
     width: 94%;
     padding: 30px 40px;
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-#nav a{ 
+#nav a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
 }
 
-#heading{
+#heading {
     margin-top: 70px;
 }
 
-#heading h1{
+#heading h1 {
     /* font-family: 'General Sans'; */
     margin-left: 35px;
     opacity: .6;
@@ -71,24 +72,24 @@ html,body{
     text-transform: uppercase;
 }
 
-#heading #secondh1{
+#heading #secondh1 {
     margin-left: 190px;
 }
 
-.blocktext{
+.blocktext {
     width: fit-content;
     display: flex;
     flex-direction: column;
-    align-items: end; 
+    align-items: end;
 }
 
-.blocktext h5{
-    text-transform:uppercase;
+.blocktext h5 {
+    text-transform: uppercase;
     text-align: right t;
     font-size: 15px;
 }
 
-#chotiheadings{
+#chotiheadings {
     margin-top: 100px;
     padding-right: 50px;
     display: flex;
@@ -96,14 +97,14 @@ html,body{
     align-items: end;
 }
 
-#chotiheadings h5{
+#chotiheadings h5 {
     text-transform: none;
     margin-top: .5vw;
     font-size: 1.3vw;
     text-align: right;
 }
 
-#herofooter{
+#herofooter {
     padding: 0 2vw;
     width: 95%;
     position: absolute;
@@ -114,7 +115,7 @@ html,body{
     justify-content: space-between;
 }
 
-#herofooter a{
+#herofooter a {
     position: relative;
     text-decoration: none;
     color: #fff;
@@ -122,31 +123,31 @@ html,body{
 }
 
 #herofooter a::before {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #e2d9d9;
-        transform: scaleX(0);
-        transform-origin: top left;
-        transition: transform 0.3s ease; 
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #e2d9d9;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
 }
 
 #herofooter a:hover::before {
     transform: scaleX(1);
 }
-  
 
-#herofooter #iconset{
+
+#herofooter #iconset {
     display: flex;
     color: black;
     gap: 5px;
 }
 
-#herofooter .circle{
+#herofooter .circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,7 +157,7 @@ html,body{
     background-color: #888;
 }
 
-.midsec{
+.midsec {
     padding-top: 100px;
     padding-right: 10vw;
     width: 100%;
@@ -165,7 +166,7 @@ html,body{
     color: #fff;
 }
 
-.elem{
+.elem {
     position: relative;
     display: flex;
     align-items: center;
@@ -173,26 +174,26 @@ html,body{
     border-top: 1px solid #888;
     width: 95%;
     padding: 2vw 1vw;
-    padding-right: 0;  
+    padding-right: 0;
 }
 
-.elem h1{
+.elem h1 {
     font-size: 7.5vw;
     opacity: .7;
 }
 
-.eltlast{
+.eltlast {
     border-bottom: 1px solid #888;
 }
 
-.elem img{
+.elem img {
     opacity: 0;
     pointer-events: none;
     position: absolute;
     height: 140%;
     /* width: 18%; */
     z-index: 999;
-    
+
 }
 
 .aboutsec {
@@ -208,22 +209,22 @@ html,body{
     background-color: black;
 }
 
-.aboutsec img{
+.aboutsec img {
     /* border: 1px solid #888; */
     width: 200px;
 }
 
-.textabout{
+.textabout {
     /* border: 1px solid #888; */
     width: 25rem;
 }
 
-.textabout h5{
+.textabout h5 {
     opacity: .7;
     margin-bottom: 10px;
 }
 
-.textabout p{
+.textabout p {
     line-height: 1.7;
     margin-bottom: 30px;
 }
@@ -237,18 +238,18 @@ html,body{
     text-decoration: none;
 }
 
-.sus{
+.sus {
     color: #fff;
     padding: 60px 30px 0;
     padding-bottom: 3vw;
 }
 
-.sus h5{
+.sus h5 {
     text-transform: uppercase;
     opacity: .6;
 }
 
-.sus h3{
+.sus h3 {
     font-size: 14px;
     margin-top: 10px;
 }
@@ -263,13 +264,13 @@ html,body{
     padding: 20px 30px;
 }
 
-.left{
+.left {
     display: flex;
     gap: 20px;
 }
 
 
-.right{
+.right {
     display: flex;
     gap: 30px;
 }
@@ -280,5 +281,137 @@ html,body{
     font-weight: 500;
     color: #fff;
     text-decoration: none;
-} 
+}
 
+/* Mobile Styles */
+@media (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #nav a {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    #heading h1 {
+        font-size: 12vw;
+        margin-left: 20px;
+    }
+
+    #chotiheadings {
+        padding-right: 20px;
+    }
+
+    #chotiheadings h5 {
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    #herofooter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .midsec {
+        padding-right: 5vw;
+    }
+
+    .elem {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2vw;
+    }
+
+    .aboutsec {
+        flex-direction: column;
+        padding-left: 5vw;
+    }
+
+    .textabout {
+        width: auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer .left,
+    .footer .right {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #nav {
+        padding: 20px 30px;
+    }
+
+    #nav a {
+        font-size: 17px;
+    }
+
+    #heading h1 {
+        font-size: 9vw;
+        margin-left: 30px;
+    }
+
+    #chotiheadings h5 {
+        font-size: 2.5vw;
+    }
+
+    #herofooter {
+        padding: 0 5vw;
+    }
+
+    .midsec {
+        padding-right: 8vw;
+    }
+
+    .elem {
+        padding: 3vw 1vw;
+    }
+
+    .aboutsec {
+        padding-left: 20vw;
+    }
+
+    .textabout {
+        width: 20rem;
+    }
+
+    .footer {
+        padding: 15px 20px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    #nav {
+        padding: 30px 40px;
+    }
+
+    #heading h1 {
+        font-size: 8vw;
+    }
+
+    #chotiheadings h5 {
+        font-size: 1.5vw;
+    }
+
+    .midsec {
+        padding-right: 10vw;
+    }
+
+    .aboutsec {
+        padding-left: 40vw;
+    }
+
+    .textabout {
+        width: 25rem;
+    }
+}
